@@ -1,0 +1,7 @@
+# npm 会在 Unix 上直接执行 bin 的 shebang —— 若文件被 checkout 成 CRLF，
+# 首行会变成 "#!/usr/bin/env node\r"，报 "bad interpreter"。锁死 LF。
+* text=auto eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf

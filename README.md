@@ -1,7 +1,7 @@
 # merestone
 
-> **Name reserved.** This is a placeholder release (`0.0.0`), published on 2026-10-13 so that the name
-> belongs to the project described below. The first real release — the MCP server — will be `0.1.0`.
+> **Name reserved.** This is a placeholder release (`0.0.0`), published so that the name belongs to
+> the project described below. The first real release — the MCP server — will be `0.1.0`.
 > Until then this package does nothing except hold the name; please do not depend on it.
 
 **Stable addresses for durable project memory — and the fewest tokens it takes to find them.**
