@@ -1,7 +1,7 @@
 {
   "name": "merestone",
   "version": "0.0.0",
-  "description": "Stable addresses for durable project memory: an MCP server whose records are addressed by codes that are never renamed or reused, and whose references are re-checked by a gate.",
+  "description": "Stable addresses for durable project memory, built to spend as little context as possible: records are addressed by codes that are never renamed or reused, and every reference is re-checked by a gate.",
   "keywords": [
     "mcp",
     "model-context-protocol",
@@ -11,7 +11,10 @@
     "records",
     "provenance",
     "adr",
-    "gate"
+    "gate",
+    "context",
+    "context-window",
+    "token-economy"
   ],
   "license": "MIT",
   "repository": {

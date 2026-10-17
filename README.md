@@ -4,11 +4,33 @@
 > belongs to the project described below. The first real release — the MCP server — will be `0.1.0`.
 > Until then this package does nothing except hold the name; please do not depend on it.
 
-**Stable addresses for durable project memory.**
+**Stable addresses for durable project memory — and the fewest tokens it takes to find them.**
 
 `merestone` is an MCP server that turns a repository's working documents into records addressed by
 short codes (`PL-…`, `IS-…`) that are **never renamed and never reused**, with every reference
 **re-checked by a gate** so a dead pointer fails loudly instead of silently.
+
+## The one principle everything else serves
+
+**Spend as little context as possible.**
+
+Everything this project asks of you — one object, one code; codes that are never reused; records that
+are superseded rather than edited; references that a gate re-checks — exists for exactly one reason:
+**misunderstanding costs context**. Every token spent re-reading a file because a pointer turned out
+to be dead, or re-deriving what `IS-048` meant because the number had been reused, is a token not
+spent on the actual work.
+
+The rules are not the point. They are the cheapest way we know to keep the context bill down.
+
+| mechanism | the context it saves |
+| --- | --- |
+| one record, one code | no tree walk to find "the" document — a code is a few tokens and it resolves |
+| codes never reused, never renamed | no disambiguation between two things that once shared a number |
+| supersede, never edit | no re-reading a whole record just to learn what changed |
+| a gate re-checks every reference | a dead pointer fails at check time, not after three wrong files are loaded |
+| excerpts that say they were truncated | a 40-line body is never mistaken for the whole record |
+| no numbers in tool descriptions | the tool surface stays stable and cacheable |
+| low-frequency commands stay in the CLI | every tool name is permanent context; only the frequent ones earn one |
 
 ## Why "merestone"
 
