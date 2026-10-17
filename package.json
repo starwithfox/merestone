@@ -1,0 +1,43 @@
+{
+  "name": "merestone",
+  "version": "0.0.0",
+  "description": "Stable addresses for durable project memory: an MCP server whose records are addressed by codes that are never renamed or reused, and whose references are re-checked by a gate.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "coding-agent",
+    "documentation",
+    "memory",
+    "records",
+    "provenance",
+    "adr",
+    "gate"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starwithfox/merestone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/starwithfox/merestone/issues"
+  },
+  "homepage": "https://github.com/starwithfox/merestone#readme",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "merestone": "bin/merestone.js"
+  },
+  "files": [
+    "bin/",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
